@@ -1,0 +1,89 @@
+    <!--PreLoader-->
+        <div class="loader">
+            <div class="loader-inner">
+                <div class="circle"></div>
+            </div>
+        </div>
+    <!--PreLoader Ends-->
+
+    <!-- Header -->
+        <div class="top-header-area" id="sticker">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-sm-12 text-center">
+                        <div class="main-menu-wrap">
+                            <!-- logo -->
+                            <div class="site-logo">
+                                <a href="index.html">
+                                    <img src="assets/img/logochocu-removebg-preview.png" alt="">
+                                </a>
+                            </div>
+                            <!-- logo -->
+
+                            <!-- menu start -->
+                            <nav class="main-menu">
+                                <ul>
+                                    <li class="current-list-item"><a href="#">Trang chủ</a></li>
+                                    <li><a [routerLink]="['/about']" routerLinkActive="router-link-active">Đăng tin</a></li>
+                                    <li><a [routerLink]="['/products']" routerLinkActive="router-link-active">Sản phẩm</a></li>                                                       
+                                    <li><a [routerLink]="['/news']" routerLinkActive="router-link-active">Blog</a></li>                           
+                                    <li><a [routerLink]="['/contact']" routerLinkActive="router-link-active">Liên hệ</a></li>
+                                    <li>
+                                        <div class="header-icons">
+                                            <a class="shopping-cart" routerLink="/cart"><i class="fas fa-shopping-cart"></i></a>
+                                            <a class="mobile-hide search-bar-icon" href="#"><i class="fas fa-search"></i></a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <a class="mobile-show search-bar-icon" href="#"><i class="fas fa-search"></i></a>
+                            <div class="mobile-menu"></div>
+                            <!-- menu end -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- End header -->
+
+    <!-- Search area -->
+        <div class="search-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <span class="close-btn"><i class="fas fa-window-close"></i></span>
+                        <div class="search-bar">
+                            <div class="search-bar-tablecell">
+                                <h3>Tìm kiếm thông tin:</h3>
+                                <input type="text" placeholder="Keywords">
+                                <button type="submit">Tìm kiếm <i class="fas fa-search"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- End search area -->
+
+    <!-- Hero area -->
+        <div class="hero-area hero-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9 offset-lg-2 text-center">
+                        <div class="hero-text">
+                            <div class="hero-text-tablecell">
+                                <p style="font-weight: bold;" class="subtitle">chất lượng - giá rẻ</p>
+                                <h1>Thanh lý đồ qua sử dụng với giá phải chăng</h1>
+                                <div class="hero-btns">
+                                    <a [routerLink]="['/products']" routerLinkActive="router-link-active" class="boxed-btn">Xem  sản phẩm</a>
+                                    <a [routerLink]="['/contact']" routerLinkActive="router-link-active" class="bordered-btn">Liên hệ chúng tôi</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- End hero area -->
+
+
