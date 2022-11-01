@@ -10,7 +10,8 @@ import { ProductdetailsComponent } from './components/productdetails/productdeta
 import { ProductsComponent } from './components/products/products.component';
 
 const routes: Routes = [
-  {path:'', component:MainComponent},
+  { path: '',   redirectTo: '/home', pathMatch: 'full' },
+  {path:'home', component:MainComponent},
   {path:'products', component:ProductsComponent},
   {path:'products/:maSP', component:ProductdetailsComponent},
   {path:'cart', component:CartComponent},
@@ -18,11 +19,10 @@ const routes: Routes = [
   {path:'about', component:AboutComponent},
   {path:'contact', component:ContactComponent},
   {path:'news', component:NewsComponent}
-  
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { anchorScrolling: 'enabled' })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

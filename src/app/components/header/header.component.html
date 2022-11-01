@@ -23,14 +23,14 @@
                             <!-- menu start -->
                             <nav class="main-menu">
                                 <ul>
-                                    <li class="current-list-item"><a href="#">Trang chủ</a></li>
-                                    <li><a [routerLink]="['/about']" routerLinkActive="router-link-active">Đăng tin</a></li>
-                                    <li><a [routerLink]="['/products']" routerLinkActive="router-link-active">Sản phẩm</a></li>                                                       
-                                    <li><a [routerLink]="['/news']" routerLinkActive="router-link-active">Blog</a></li>                           
-                                    <li><a [routerLink]="['/contact']" routerLinkActive="router-link-active">Liên hệ</a></li>
+                                    <li><a [routerLink]="['/home']" routerLinkActive="active" fragment="home">Trang chủ</a></li>
+                                    <li><a [routerLink]="['/about']" fragment="about" routerLinkActive="active">Đăng tin</a></li>
+                                    <li><a [routerLink]="['/products']" fragment="products" routerLinkActive="active">Sản phẩm</a></li>                                                       
+                                    <li><a [routerLink]="['/news']" fragment="news" routerLinkActive="active">Blog</a></li>                           
+                                    <li><a [routerLink]="['/contact']" fragment="contact" routerLinkActive="active">Liên hệ</a></li>
                                     <li>
                                         <div class="header-icons">
-                                            <a class="shopping-cart" routerLink="/cart"><i class="fas fa-shopping-cart"></i></a>
+                                            <a class="shopping-cart" routerLink="/cart" routerLinkActive="active" fragment="cart"><i class="fas fa-shopping-cart"></i></a>
                                             <a class="mobile-hide search-bar-icon" href="#"><i class="fas fa-search"></i></a>
                                         </div>
                                     </li>
@@ -66,7 +66,7 @@
     <!-- End search area -->
 
     <!-- Hero area -->
-        <div class="hero-area hero-bg">
+        <div class="hero-area hero-bg" id="home">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-9 offset-lg-2 text-center">
