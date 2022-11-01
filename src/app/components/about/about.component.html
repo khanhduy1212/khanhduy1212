@@ -1,24 +1,11 @@
-<!-- breadcrumb-section -->
-	<div class="breadcrumb-section breadcrumb-bg">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-8 offset-lg-2 text-center">
-					<div class="breadcrumb-text">
-						<p>We sale fresh fruits</p>
-						<h1>About Us</h1>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- end breadcrumb section -->
+
 <!-- featured section -->
 <div class="feature-bg">
     <div class="container">
         <div class="row">
             <div class="col-lg-7">
                 <div class="featured-text">
-                    <h2 class="pb-3">Why <span class="orange-text">Fruitkha</span></h2>
+                    <h2 class="pb-3">Tại sao cần<span class="orange-text"> chọn chợ tốt</span></h2>
                     <div class="row">
                         <div class="col-lg-6 col-md-6 mb-4 mb-md-5">
                             <div class="list-box d-flex">
@@ -26,8 +13,8 @@
                                     <i class="fas fa-shipping-fast"></i>
                                 </div>
                                 <div class="content">
-                                    <h3>Home Delivery</h3>
-                                    <p>sit voluptatem accusantium dolore mque laudantium, totam rem aperiam, eaque ipsa quae ab illo.</p>
+                                    <h3>Hỗ trợ</h3>
+                                    <p>Nhận lấy hàng từ người bán và giao hàng đến người mua qua đăng ký từ hệ thống chợ tốt.</p>
                                 </div>
                             </div>
                         </div>
@@ -37,8 +24,8 @@
                                     <i class="fas fa-money-bill-alt"></i>
                                 </div>
                                 <div class="content">
-                                    <h3>Best Price</h3>
-                                    <p>sit voluptatem accusantium dolore mque laudantium, totam rem aperiam, eaque ipsa quae ab illo.</p>
+                                    <h3>Giá cả</h3>
+                                    <p>sự giao dịch giá cả từ hai bên qua hệ thống chat trực tiếp trong hệ thống.</p>
                                 </div>
                             </div>
                         </div>
@@ -48,7 +35,7 @@
                                     <i class="fas fa-briefcase"></i>
                                 </div>
                                 <div class="content">
-                                    <h3>Custom Box</h3>
+                                    <h3>Chính sách quyền lợi</h3>
                                     <p>sit voluptatem accusantium dolore mque laudantium, totam rem aperiam, eaque ipsa quae ab illo.</p>
                                 </div>
                             </div>
@@ -73,13 +60,29 @@
 <!-- end featured section -->
 
 <!-- shop banner -->
-<section class="shop-banner">
-    <div class="container">
-        <h3>December sale is on! <br> with big <span class="orange-text">Discount...</span></h3>
-        <div class="sale-percent"><span>Sale! <br> Upto</span>50% <span>off</span></div>
-        <a href="shop.html" class="cart-btn btn-lg">Shop Now</a>
-    </div>
-</section>
+<h2 style="text-align:center;margin-bottom: 47px;"><span class="orange-text">ĐĂNG</span> TIN</h2>
+                <div class="form-title">
+                    <h2 style="margin-left:42px;">Hãy đăng  sản phẩm bạn muốn bán tại đây</h2>
+                    <p style="margin-left:42px;">Hệ thống sẽ ghi nhận tin của bạn ,xem xét và duyệt tin của bạn trong thời gian sớm nhất.</p>
+                </div>
+                 <div id="form_status"></div>
+                <div class="contact-form">
+                    <form type="POST" id="fruitkha-contact" onSubmit="return valid_datas( this )">
+                        <p>
+                            <input style="border: 2px solid #000; width:100%;"  type="text" placeholder=" Tiêu đề sản phẩm :" name="name products" id="name products">
+                            
+                        </p>
+                        <p>
+                            <input style="border: 2px solid #000;" type="email" placeholder="Độ mới :" name="new" id="new">
+                            <input style="border: 2px solid #000;width:51%" type="tel" placeholder="Số điện thoại :" name="phone" id="phone">
+                         
+                        </p>
+                        <p><textarea  style="border: 2px solid #000;" name="message" id="message" cols="30" rows="10" placeholder="Mô tả chi tiết :"></textarea></p>
+                        <input type="hidden" name="token" value="FsWga4&%" />
+                        <p><input style="margin-left: 680px;" type="submit" value="Đăng tin"></p>
+                    </form>
+                </div>
+      
 <!-- end shop banner -->
 
 <!-- team section -->
