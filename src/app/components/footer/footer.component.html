@@ -23,10 +23,10 @@
                     <h2 class="widget-title">Trang</h2>
                     <ul>
                         <li><a href="index.html">Trang chủ</a></li>
-                        <li><a href="about.html">Đăng tin</a></li>
-                        <li><a href="services.html">Sản phẩm</a></li>
-                        <li><a href="news.html">Blog</a></li>
-                        <li><a href="contact.html">Liên hệ</a></li>
+                        <li><a [routerLink]="['/about']" fragment="about" routerLinkActive="active">Đăng tin</a></li>
+                        <li><a [routerLink]="['/products']" fragment="about" routerLinkActive="active">Sản phẩm</a></li>
+                        <li><a [routerLink]="['/news']" fragment="about" routerLinkActive="active">Blog</a></li>
+                        <li><a [routerLink]="['/contact']" fragment="about" routerLinkActive="active">Liên hệ</a></li>
                     </ul>
                 </div>
             </div>
