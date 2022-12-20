@@ -14,7 +14,7 @@ export class AppComponent {
   constructor (private http:HttpClient) {}
 
   ngOnInit() {
-    this.http.get('https://60ae6af05b8c300017dea7a4.mockapi.io/Products').subscribe(data => {
+    this.http.get('https://639550ff86829c49e831995e.mockapi.io/products').subscribe(data => {
       console.log(data);
       this.kq = data;
     });
