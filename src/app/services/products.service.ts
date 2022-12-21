@@ -10,14 +10,14 @@ export class ProductsService {
   httpOptions = {
     headers:new HttpHeaders({'Content-Type':'Application/json'})
   };
-  apiUrl = 'https://60ae6af05b8c300017dea7a4.mockapi.io/Products';
+  apiUrl = 'https://60afc4b2e6d11e00174f51b6.mockapi.io/Products';
   constructor(private http:HttpClient) { }
 
   getAll():Observable<Products[]> {
     return this.http.get<Products[]>(this.apiUrl).pipe();
   }
 
-  get1Product(maSP:number):Observable<Products> {
-    return this.http.get<Products>(`${this.apiUrl}/${maSP}`).pipe();
+  get1Product(_id:number):Observable<Products> {
+    return this.http.get<Products>(`${this.apiUrl}/${_id}`).pipe();
   }
 }

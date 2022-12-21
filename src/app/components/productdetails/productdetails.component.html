@@ -18,14 +18,14 @@
         <div class="row" *ngIf="product">
             <div class="col-md-5">
                 <div class="single-product-img">
-                    <img src="{{product.hinhAnh}}" alt="">
+                    <img src="{{product.image}}" alt="">
                 </div>
             </div>
             <div class="col-md-7">
                 <div class="single-product-content">
-                    <h3>{{product.tenSP}}</h3>
-                    <p class="single-product-pricing"><span>Độ mới:98%</span> {{product.giaBan}} $</p>
-                    <p>{{product.moTa}}</p>
+                    <h3>{{product.nameSP}}</h3>
+                    <p class="single-product-pricing"><span>Độ mới:98%</span> {{product.price}} $</p>
+                    <p>{{product.description}}</p>
                     <div class="single-product-form">
 
                         <a routerLink="/cart" class="cart-btn" (click)="addToCart(product)"><i class="fas fa-shopping-cart"></i> Thêm vào giỏ</a>

@@ -11,6 +11,7 @@ declare var $: any;
 })
 export class ProductsComponent implements OnInit {
   datas:Products [] = [];
+  page :number = 1;
   constructor(private pros:ProductsService) { }
 
   ngOnInit(): void {
